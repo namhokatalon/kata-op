@@ -21,3 +21,8 @@ Likewise /var/lib/pgsql/data/pg_hba.conf (around line 88) add this line:
 
 host  all  all 0.0.0.0/0 md5
 Now you should be able to connect to your db from outside.
+
+
+### Debian 11
+## https://www.server-world.info/en/note?os=Debian_11&p=postgresql&f=1
+
