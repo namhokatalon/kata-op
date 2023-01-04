@@ -3,6 +3,10 @@
 ## Katone version: 1.3.2 / 1.7.2 / 1.9.1 / latest
 kversion="latest"
 
+## Stop docker-compose
+echo "Stop docker-compose"
+sh /tmp/katalon-platform/destroy-all.sh
+
 ## Get latest docker images
 if [ "$kversion" = "latest" ]
 then
