@@ -26,3 +26,6 @@ Now you should be able to connect to your db from outside.
 ### Debian 11
 ## https://www.server-world.info/en/note?os=Debian_11&p=postgresql&f=1
 
+### CentOS 7
+## https://computingforgeeks.com/how-to-install-postgresql-14-centos-rhel-7/
+
