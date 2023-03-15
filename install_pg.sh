@@ -29,3 +29,19 @@ Now you should be able to connect to your db from outside.
 ### CentOS 7
 ## https://computingforgeeks.com/how-to-install-postgresql-14-centos-rhel-7/
 
+
+### Psql
+CREATE EXTENSION pg_stat_statements;
+
+drop database k1;
+drop database kit;
+drop role datadog;
+drop role root;
+drop role kit_admin_role;
+drop role kit_admin_user1;
+drop role kit_app_role;
+drop role kit_app_user1;
+drop role kit_readonly_role;
+drop role kit_readonly_user1;
+create database k1;
+create database kit;
