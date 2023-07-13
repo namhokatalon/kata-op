@@ -45,3 +45,24 @@ drop role kit_readonly_role;
 drop role kit_readonly_user1;
 create database k1;
 create database kit;
+
+
+1. ### Download debug images
+wget https://katalon-op-deploy.s3.amazonaws.com/2.1.0/katalon-op-debug.tar.gz
+docker load < katalon-op-debug.tar.gz
+docker images | grep katalon-op-debug
+
+2. ### Run debug image to check DB connect
+
+docker run --rm -it katalon-op-debug:2.1.0 bash
+root@11c015fa2fdf:/#
+
+nc -zv <ip> 5432
+
+psql -U postgres -p 5432 -h <ip>
+
+\l  #list databases
+\du #list roles
+\dx #list extensions
+
+
